@@ -1,4 +1,4 @@
-/* Reset Básico */
+/* Reset e Base */
 * {
     margin: 0;
     padding: 0;
@@ -7,16 +7,15 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #050a1f; /* Azul Marinho Profundo */
+    background-color: #050a1f;
     color: #ffffff;
     line-height: 1.6;
     scroll-behavior: smooth;
 }
 
-/* Tipografia */
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
-    color: #f7d85c; /* Dourado Celeste */
+    color: #f7d85c;
     margin-bottom: 20px;
 }
 
@@ -41,34 +40,21 @@ nav {
     color: #f7d85c;
     font-size: 1.5rem;
     font-weight: 700;
-    letter-spacing: 2px;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 0.9rem;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #f7d85c;
-}
+nav ul { display: flex; list-style: none; gap: 25px; align-items: center; }
+nav a { text-decoration: none; color: #ffffff; font-size: 0.9rem; transition: 0.3s; }
+nav a:hover { color: #f7d85c; }
 
 .cta-nav {
     background: #f7d85c;
     color: #050a1f !important;
-    padding: 8px 20px;
+    padding: 8px 18px;
     border-radius: 20px;
+    font-weight: 600;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
     height: 100vh;
     display: flex;
@@ -79,24 +65,14 @@ nav a:hover {
     padding: 0 20px;
 }
 
-.hero h1 {
-    font-size: 5rem;
-    letter-spacing: 10px;
-    margin-bottom: 10px;
-}
-
-.tagline {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
+.hero h1 { font-size: 4.5rem; letter-spacing: 8px; }
+.tagline { font-size: 1.1rem; margin-bottom: 30px; letter-spacing: 3px; text-transform: uppercase; opacity: 0.9; }
 
 /* Botões */
 .cta-button {
     background-color: #f7d85c;
     color: #050a1f;
-    padding: 15px 40px;
+    padding: 14px 35px;
     border: none;
     border-radius: 30px;
     font-weight: 600;
@@ -107,18 +83,15 @@ nav a:hover {
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(247, 216, 92, 0.3);
+    box-shadow: 0 8px 15px rgba(247, 216, 92, 0.2);
 }
 
-/* Seções */
-section {
-    padding: 100px 10%;
-    text-align: center;
-}
+/* Seções Gerais */
+section { padding: 100px 10%; text-align: center; }
 
 .options-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin-top: 50px;
 }
@@ -126,23 +99,23 @@ section {
 .option-card {
     background: rgba(255, 255, 255, 0.03);
     padding: 40px;
-    border: 1px solid rgba(247, 216, 92, 0.3);
+    border: 1px solid rgba(247, 216, 92, 0.2);
     border-radius: 20px;
-    transition: 0.3s;
 }
 
-.option-card:hover {
-    border-color: #f7d85c;
-    background: rgba(255, 255, 255, 0.05);
+.icon { font-size: 2rem; margin-bottom: 15px; }
+
+/* --- FORMULÁRIO DE CONTATO CORRIGIDO --- */
+.contact-container {
+    max-width: 650px;
+    margin: 0 auto;
 }
 
-/* Formulário de Contato */
 .contact-form {
-    max-width: 700px;
-    margin: 40px auto 0;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-top: 40px;
 }
 
 .input-group {
@@ -152,11 +125,30 @@ section {
 }
 
 input, textarea {
+    width: 100%;
     padding: 15px;
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(247, 216, 92, 0.2);
     border-radius: 10px;
     color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+input:focus, textarea:focus {
+    border-color: #f7d85c;
+    outline: none;
+}
+
+.contact-form .cta-button {
+    align-self: center;
+    margin-top: 10px;
+}
+
+/* Responsivo para celular */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 3rem; }
+    .input-group { grid-template-columns: 1fr; }
+    nav ul { display: none; } /* Esconde menu no mobile para simplificar */
 }
 
 footer {
@@ -164,5 +156,5 @@ footer {
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.8rem;
-    opacity: 0.7;
+    opacity: 0.6;
 }
