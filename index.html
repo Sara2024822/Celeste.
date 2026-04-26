@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celeste | Eternizando Momentos sob as Estrelas</title>
+    
+    <link rel="stylesheet" href="celeste.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav role="navigation" aria-label="Menu principal">
+        <a href="#" class="logo">
+            <img src="estrela.png" alt="Logo Celeste" class="logo-img"> 
+            <span>CELESTE</span>
+        </a>
+        <ul>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#personalize">Personalize</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#personalize" class="cta-nav">Começar</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>CELESTE</h1>
+            <p class="tagline">A melhor forma de eternizar momentos.</p>
+            <button class="cta-button" onclick="window.location.href='#personalize'">Ver Estrelas</button>
+        </div>
+    </header>
+
+    <section id="sobre" class="about">
+        <h2>Sua História, Escrita no Céu</h2>
+        <p>A Celeste transforma datas e nomes especiais em registros astronômicos únicos. Cada certificado que emitimos é uma janela para o cosmos, dedicando uma coordenada estelar real a quem você ama.</p>
+    </section>
+
+    <section id="personalize" class="customize">
+        <h2>Crie Seu Legado Estelar</h2>
+        <div class="options-grid">
+            
+            <div class="option-card">
+                <h3>Registro de Nascimento</h3>
+                <p>O brilho exato do céu no dia em que uma nova vida começou.</p>
+            </div>
+
+            <div class="option-card">
+                <h3>Mapa de Noivado</h3>
+                <p>As constelações que testemunharam o seu 'Sim'.</p>
+            </div>
+
+            <div class="option-card">
+                <h3>Memorial Eterno</h3>
+                <p>Uma homenagem luminosa e eterna para quem sempre guiará seus passos.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="ver-estrelas" class="gallery">
+    <h2>Galeria do Cosmos</h2>
+    <p>Veja alguns dos momentos que já eternizamos sob o brilho das constelações.</p>
+    
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="foto1.jpg" alt="Certificado Celeste 1">
+            <div class="overlay"><span>Nascimento de Alice</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="foto2.jpg" alt="Mapa Estelar 2">
+            <div class="overlay"><span>Noivado de Bruno e Carla</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="foto3.jpg" alt="Certificado Celeste 3">
+            <div class="overlay"><span>Memorial Vô José</span></div>
+        </div>
+    </div>
+</section>
+
+    <section id="contato" class="contact">
+        <div class="contact-container">
+            <h2>Fale Conosco</h2>
+            <p>Dúvidas sobre o seu registro estelar? Nossa equipe está pronta para ajudar.</p>
+            
+            <form class="contact-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="email" placeholder="Seu E-mail" required>
+                </div>
+                <input type="text" placeholder="Assunto">
+                <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                <button type="submit" class="cta-button">Enviar Mensagem</button>
+            </form>
+            
+            <div class="contact-info">
+                <span>📧 contato@celeste.com.br</span>
+                <span>✨ @celeste_astro</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Celeste - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
