@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celeste | Eternizando Momentos</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Celeste | Eternizando Momentos sob as Estrelas</title>
+    <link rel="stylesheet" href="celeste.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -13,13 +13,14 @@
 
     <nav>
         <a href="#" class="logo">
-            <img src="estrela.png" alt="Logo Celeste" class="logo-img" style="height: 30px; vertical-align: middle;"> 
+            <img src="estrela.png" alt="Logo Celeste" class="logo-img" style="height: 40px; margin-right: 10px; vertical-align: middle;"> 
             <span>CELESTE</span>
         </a>
         <ul>
             <li><a href="#sobre">Sobre Nós</a></li>
             <li><a href="#personalize">Personalize</a></li>
             <li><a href="#contato">Contato</a></li>
+            <li><a href="#personalize" class="cta-nav">Começar</a></li>
         </ul>
     </nav>
 
@@ -32,31 +33,53 @@
     </header>
 
     <section id="sobre" class="about">
-        <h2>Sua História, Escrita no Céu</h2>
-        <p>A Celeste transforma datas e nomes especiais em registros astronômicos únicos.</p>
+        <div class="container">
+            <h2>Sua História, Escrita no Céu</h2>
+            <p>A Celeste transforma datas e nomes especiais em registros astronômicos únicos. Cada certificado que emitimos é uma janela para o cosmos, dedicando uma coordenada estelar real a quem você ama.</p>
+        </div>
     </section>
 
     <section id="personalize" class="customize">
-        <h2>Crie Seu Legado Estelar</h2>
-        <div class="options-grid">
-            <div class="option-card">
-                <h3>Registro de Nascimento</h3>
-                <p>O brilho exato do céu no dia em que uma nova vida começou.</p>
-            </div>
-            <div class="option-card">
-                <h3>Memorial Eterno</h3>
-                <p>Uma homenagem luminosa para quem sempre guiará seus passos.</p>
+        <div class="container">
+            <h2>Crie Seu Legado Estelar</h2>
+            <div class="options-grid">
+                <div class="option-card">
+                    <div class="icon">✨</div>
+                    <h3>Registro de Nascimento</h3>
+                    <p>O brilho exato do céu no dia em que uma nova vida começou.</p>
+                </div>
+                <div class="option-card">
+                    <div class="icon">💍</div>
+                    <h3>Mapa de Noivado</h3>
+                    <p>As constelações que testemunharam o seu 'Sim'.</p>
+                </div>
+                <div class="option-card">
+                    <div class="icon">🕊️</div>
+                    <h3>Memorial Eterno</h3>
+                    <p>Uma homenagem luminosa para quem sempre guiará seus passos.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contato" class="contact">
-        <h2>Fale Conosco</h2>
-        <p>contato@celeste.com.br</p>
+        <div class="contact-container">
+            <h2>Fale Conosco</h2>
+            <p>Dúvidas sobre o seu registro? Nossa equipe está pronta para ajudar.</p>
+            <form class="contact-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="email" placeholder="Seu E-mail" required>
+                </div>
+                <input type="text" placeholder="Assunto">
+                <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                <button type="submit" class="cta-button">Enviar Mensagem</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Celeste - Todos os direitos reservados.</p>
+        <p>&copy; 2026 Celeste - Eternizando momentos sob o brilho das constelações.</p>
     </footer>
 
 </body>
